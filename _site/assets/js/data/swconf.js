@@ -1,16 +1,16 @@
 const swconf = {
   
-    cacheName: 'chirpy-1761808790',resources: [
-      '/OrangeSunrise.github.io/assets/css/jekyll-theme-chirpy.css',
-      '/OrangeSunrise.github.io/',
+    cacheName: 'chirpy-1761809052',resources: [
+      '/assets/css/jekyll-theme-chirpy.css',
+      '/',
       
-        '/OrangeSunrise.github.io/categories/',
+        '/categories/',
       
-        '/OrangeSunrise.github.io/tags/',
+        '/tags/',
       
-        '/OrangeSunrise.github.io/archives/',
+        '/archives/',
       
-        '/OrangeSunrise.github.io/about/',
+        '/about/',
       
 
       
