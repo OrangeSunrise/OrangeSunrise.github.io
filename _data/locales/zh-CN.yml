@@ -57,8 +57,8 @@ post:
   words: 字
   pageview_measure: 次浏览
   read_time:
-    unit: 分钟
-    prompt: 阅读
+    unit: 分钟时长
+    prompt: ''
   relate_posts: 相关文章
   share: 分享
   button:
