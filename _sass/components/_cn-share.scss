@@ -1,0 +1,69 @@
+.cn-share {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 9999;
+
+  &.hidden {
+    display: none;
+  }
+
+  .cn-share-box {
+    width: 380px;
+    background: #fff;
+    border-radius: 14px;
+    padding: 1.5rem;
+    margin: 12% auto;
+    position: relative;
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .cn-share-body {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .cn-qrcode {
+    text-align: center;
+
+    p {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+  }
+
+  .cn-link {
+    flex: 1;
+
+    input {
+      width: 100%;
+      padding: 0.45rem;
+      margin-bottom: 0.5rem;
+    }
+
+    button {
+      width: 100%;
+      cursor: pointer;
+    }
+
+    small {
+      display: block;
+      margin-top: 0.4rem;
+      color: #888;
+      font-size: 0.75rem;
+    }
+  }
+
+  .cn-close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+}
