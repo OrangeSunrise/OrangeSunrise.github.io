@@ -269,7 +269,7 @@ image: /path/to/image
 ---
 ```
 
-![Desktop View](/assets/favicon.svg){: width="972" height="589" }
+![Desktop View](/assets/image-20251216135526312.png){: width="972" height="589" }
 _Full screen width and center alignment_
 
 ### LQIP
