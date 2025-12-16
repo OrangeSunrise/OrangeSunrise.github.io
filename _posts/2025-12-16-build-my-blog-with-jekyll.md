@@ -283,9 +283,6 @@ image:
 ---
 ```
 
-> 您可以在帖子 [_文本和排版_](../text-and-typography/) 的预览图片中观察 LQIP。
-
-
 对于普通图片：
 
 ```markdown
