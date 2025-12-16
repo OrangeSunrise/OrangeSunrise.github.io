@@ -6,6 +6,11 @@
 #   url: {homepage_of_author}
 # -------------------------------------
 
+cerberus:
+  name: Cerberus
+  twitter: Cerberus
+  url: https://github.com/OrangeSunrise/
+
 cotes:
   name: Cotes Chung
   twitter: cotes2020
@@ -16,8 +21,5 @@ sille_bille:
   twitter: dinesh_MKD
   url: https://github.com/SilleBille/
 
-cerberus:
-  name: Cerberus
-  twitter: Cerberus
-  url: https://github.com/OrangeSunrise/
+
 
