@@ -125,7 +125,7 @@ npm -v
 
 > 下面内容来源于[Getting Started, Chirpy](https://chirpy.cotes.page/posts/getting-started/)
 
-```txt
+```html
 ## Creating a Site Repository
 
 When creating your site repository, you have two options depending on your needs:
@@ -173,17 +173,17 @@ This approach is convenient for modifying features or UI design, but presents ch
 
 ### 第一步：在 GitHub 上创建仓库（不要在本地）
 
-1. 打开 **Starter 模板仓库**（官方给你的那个 starter）
+打开 **Starter 模板仓库**（官方给你的那个 starter）
 
-2. 点击右上角：
+点击右上角：
 
-```
+```html
 Use this template → Create a new repository
 ```
 
-3. 仓库名填写：
+仓库名填写：
 
-```
+```html
 <你的GitHub用户名>.github.io
 ```
 
@@ -203,13 +203,13 @@ Use this template → Create a new repository
 
 创建完仓库后：
 
-```
+```html
 Settings → Pages
 ```
 
 你应该看到：
 
-```
+```html
 Your site is live at https://<username>.github.io
 ```
 
