@@ -114,6 +114,151 @@ node -v
 npm -v
 ```
 
+## wsl2中的git配置
+
+> 教程链接：**（待补充）**
+
+在开始之前，请确保你已经在 **WSL2 / Linux 环境** 中完成了 Git 的基础配置（用户名、邮箱、SSH 或 HTTPS 登录方式等）。 
+这一步只需要做一次，后续所有博客操作都会用到 Git。
+
+## 项目拉取
+
+> 下面内容来源于[Getting Started, Chirpy](https://chirpy.cotes.page/posts/getting-started/)
+
+```txt
+## Creating a Site Repository
+
+When creating your site repository, you have two options depending on your needs:
+
+### Option 1. Using the Starter (Recommended)
+
+This approach simplifies upgrades, isolates unnecessary files, and is perfect for users who want to focus on writing with minimal configuration.
+
+1. Sign in to GitHub and navigate to the [**starter**][starter].
+2. Click the <kbd>Use this template</kbd> button and then select <kbd>Create a new repository</kbd>.
+3. Name the new repository `<username>.github.io`, replacing `username` with your lowercase GitHub username.
+
+### Option 2. Forking the Theme
+
+This approach is convenient for modifying features or UI design, but presents challenges during upgrades. So don't try this unless you are familiar with Jekyll and plan to heavily modify this theme.
+
+1. Sign in to GitHub.
+2. [Fork the theme repository](https://github.com/cotes2020/jekyll-theme-chirpy/fork).
+3. Name the new repository `<username>.github.io`, replacing `username` with your lowercase GitHub username.
+```
+
+> **不要 fork 主题仓库**  
+> 👉 **用 Option 1：Use this template（Starter，推荐）**
+{: .prompt-warning }
+
+| 对比项     | ✅ Option 1：Use this template（**Recommended**） | ❌ Option 2：Fork 主题（不推荐） |
+| ---------- | ------------------------------------------------ | ------------------------------- |
+| 适合人群   | 写博客 / 文档站点的绝大多数人                    | 深度魔改主题的高级用户          |
+| 使用方式   | 基于官方模板创建仓库                             | Fork 官方主题仓库               |
+| 主题角色   | **作为依赖存在**                                 | **主题 = 你的项目本身**         |
+| 升级体验   | ⭐⭐⭐⭐⭐ 无痛升级（改版本 / 跟官方）                | ⭐ 痛苦（大量 merge 冲突）       |
+| 维护成本   | 很低                                             | 很高                            |
+| 仓库结构   | 干净，只关注内容                                 | 混杂主题源码                    |
+| 新功能跟进 | 非常容易                                         | 很困难                          |
+| 官方支持   | 完全匹配官方文档                                 | 很多文档不再适用                |
+| 翻车概率   | 极低                                             | 极高                            |
+| 后悔概率   | 😄 几乎没有                                       | 😭 **90% 会后悔**                |
+
+> 整体流程只有一句话：
+> **先在 GitHub 上用模板创建仓库 → 再拉取到本地开发**
+{: .prompt-tip }
+
+> 不要反过来在本地新建仓库再推 GitHub。
+{: .prompt-warning }
+
+### 第一步：在 GitHub 上创建仓库（不要在本地）
+
+1. 打开 **Starter 模板仓库**（官方给你的那个 starter）
+
+2. 点击右上角：
+
+```
+Use this template → Create a new repository
+```
+
+3. 仓库名填写：
+
+```
+<你的GitHub用户名>.github.io
+```
+
+> 必须：
+> - 全小写
+> - 和 GitHub 用户名一模一样
+{: .prompt-warning }
+
+> ✔ 这样 GitHub Pages 才能自动生效
+{: .prompt-info }
+
+![image-20251219092234638](/assets/image-20251219092234638.png)
+
+---
+
+### 第二步：确认 GitHub Pages 状态
+
+创建完仓库后：
+
+```
+Settings → Pages
+```
+
+你应该看到：
+
+```
+Your site is live at https://<username>.github.io
+```
+
+### 第三步：项目拉取
+
+> 例子：将我的github上面的`https://github.com/OrangeSunrise/orangesunrise.github.io`拉取到`/home/jianhui/web_project`下面
+
+在你的 Linux / WSL 环境中，按下面步骤来即可 👍
+
+#### 先确认目标目录存在
+
+```bash
+mkdir -p /home/jianhui/web_project
+cd /home/jianhui/web_project
+```
+
+#### 从 GitHub 拉取仓库
+
+```bash
+git clone https://github.com/OrangeSunrise/orangesunrise.github.io.git
+```
+
+完成后目录结构会是：
+
+```text
+/home/jianhui/web_project/
+└── orangesunrise.github.io/
+    ├── _config.yml
+    ├── _posts/
+    ├── Gemfile
+    └── ...
+```
+
+#### 验证是否成功
+
+```bash
+cd orangesunrise.github.io
+git status
+```
+
+如果看到：
+
+```text
+On branch main
+Your branch is up to date with 'origin/main'.
+```
+
+说明拉取成功 ✅
+
 ## 项目初始化
 
 进入博客仓库并安装依赖：
@@ -526,7 +671,7 @@ Chirpy 主题已预置完整的 favicon 结构，你只需要按照规范 **替�
 
 具体制作与替换方法可参考后续的 **Favicon 自定义教程**（此处暂时占位，后续补充链接）。
 
-![Favicon Files Preview](/assets/image-20251218134116353.png){: w="700" h="400" }
+![Favicon Files Preview](/assets/image-20251218134116353.png){: w="500" h="400" }
 _替换后的 favicon 文件列表_
 
 ### locales（目录）
