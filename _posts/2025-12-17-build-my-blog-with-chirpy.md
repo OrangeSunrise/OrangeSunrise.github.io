@@ -37,19 +37,23 @@ _博客首页效果预览_
 
 ### WSL2 + Ubuntu 22.04
 
-系统安装过程不再赘述，可参考微软官方文档或常见教程完成 WSL2 与 Ubuntu 初始化。
+安装教程：[链接](https://orangesunrise.github.io/posts/install-wsl2-with-ubuntu-22-04/ "点击跳转")
 
 ### Python
 
 Python 主要用于辅助脚本及工具，安装完成后确保：
 
 ```bash
-python3 --version
+python --version
 ```
+
+安装教程：[链接](https://dblab.xmu.edu.cn/blog/2853/#more-2853 "点击跳转")
 
 ### Docker
 
 Docker 并非 Jekyll 的强依赖，但在后续构建或 CI 场景中会非常有用，建议提前安装。
+
+安装教程：[链接](https://orangesunrise.github.io/posts/install-docker-in-wsl2/ "点击跳转")
 
 ## 基础依赖安装
 

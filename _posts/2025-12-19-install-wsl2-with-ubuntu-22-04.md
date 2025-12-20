@@ -3,7 +3,7 @@ layout: post
 title: Install WSL2 with Ubuntu 22.04
 date: 2025-12-19 10:46 +0800
 author: cerberus
-categories: [安装软件, 教程]
+categories: [软件安装, 教程]
 tags: [wsl2, ubuntu22.04]
 ---
 
