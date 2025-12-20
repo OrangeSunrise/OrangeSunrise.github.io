@@ -17,7 +17,7 @@ description: 使用 Chirpy 主题从零搭建并部署个人博客，包含环�
 - [x] 本地 Markdown 文章编写与预览
 - [x] Git 推送自动部署
 
-![Chirpy Blog Preview](/assets/image-20251217135521471.png){: w="1200" h="750" }
+![Chirpy Blog Preview](https://cloud-080910t-1316343199.cos.ap-beijing.myqcloud.com/assets/image-20251217135521471.png){: w="1200" h="750" }
 _博客首页效果预览_
 
 ## 开发环境
@@ -195,7 +195,7 @@ Use this template → Create a new repository
 > ✔ 这样 GitHub Pages 才能自动生效
 {: .prompt-info }
 
-![image-20251219092234638](/assets/image-20251219092234638.png)
+![image-20251219092234638](https://cloud-080910t-1316343199.cos.ap-beijing.myqcloud.com/assets/image-20251219092234638.png)
 
 ---
 
@@ -347,8 +347,11 @@ social:
     # - https://twitter.com/username # change to your Twitter homepage
     - https://github.com/OrangeSunrise/ # change to your GitHub homepage
 
-# 修改cos（对象存储地址），我这里使用了cos存储网站的图片，如果你没有使用cos可以不修改这里
-cdn: 'https://cloud-080910t-1316343199.cos.ap-beijing.myqcloud.com'
+# 修改cos（对象存储地址），建议不修改这里
+cdn: 
+
+# 修改主页头像，我这里使用的是cos存储图片，如果不用cos可以将/assets前面的链接去掉
+avatar: "https://cloud-080910t-1316343199.cos.ap-beijing.myqcloud.com/assets/favicon.svg"
 
 # 安装jekyll_compose插件，修改这里的配置（jekyll_compose插件可以快速生成文章的头信息，需要单独安装）
 jekyll_compose:
@@ -486,7 +489,7 @@ theme_mode: # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn: 'https://cloud-080910t-1316343199.cos.ap-beijing.myqcloud.com'
+cdn: 
 
 # jekyll_compose
 jekyll_compose:
@@ -499,7 +502,7 @@ jekyll_compose:
 
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/assets/favicon.svg"
+avatar: "https://cloud-080910t-1316343199.cos.ap-beijing.myqcloud.com/assets/favicon.svg"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -671,7 +674,7 @@ Chirpy 主题已预置完整的 favicon 结构，你只需要按照规范 **替�
 
 具体制作与替换方法可参考后续的 **Favicon 自定义教程**（此处暂时占位，后续补充链接）。
 
-![Favicon Files Preview](/assets/image-20251218134116353.png){: w="500" h="400" }
+![Favicon Files Preview](https://cloud-080910t-1316343199.cos.ap-beijing.myqcloud.com/assets/image-20251218134116353.png){: w="500" h="400" }
 _替换后的 favicon 文件列表_
 
 ### locales（目录）

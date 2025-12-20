@@ -96,7 +96,7 @@ theme_mode: # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn: 'https://cloud-080910t-1316343199.cos.ap-beijing.myqcloud.com'
+cdn: 
 
 # jekyll_compose
 jekyll_compose:
@@ -109,7 +109,7 @@ jekyll_compose:
 
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/assets/favicon.svg"
+avatar: "https://cloud-080910t-1316343199.cos.ap-beijing.myqcloud.com/assets/favicon.svg"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
