@@ -355,8 +355,8 @@ social:
 # 修改cos（对象存储地址），建议不修改这里
 cdn: 
 
-# 修改主页头像，我这里使用的是cos存储图片，如果不用cos可以将/assets前面的链接去掉
-avatar: "https://cloud-080910t-1316343199.cos.ap-beijing.myqcloud.com/assets/favicon.svg"
+# 修改主页头像，如果使用cos需要配置/assets前面的链接
+avatar: "/assets/favicon.svg"
 
 # 安装jekyll_compose插件，修改这里的配置（jekyll_compose插件可以快速生成文章的头信息，需要单独安装）
 jekyll_compose:
@@ -365,9 +365,12 @@ jekyll_compose:
       author: cerberus
       categories:
       tags:
+      description:
       
 # 开启文章的评论
-# 前提：需要github安装插件，教程链接：暂时空着
+# 前提：需要github安装插件
+# 教程链接：https://orangesunrise.github.io/posts/comments-with-giscus-in-chirpy/
+
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
   provider: giscus # [disqus | utterances | giscus]
@@ -503,11 +506,11 @@ jekyll_compose:
       author: cerberus
       categories:
       tags:
-      # render_with_liquid: false
+      description:
 
 
-# the avatar on sidebar, support local or CORS resources
-avatar: "https://cloud-080910t-1316343199.cos.ap-beijing.myqcloud.com/assets/favicon.svg"
+# 修改主页头像，如果使用cos需要配置/assets前面的链接
+avatar: "/assets/favicon.svg"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
