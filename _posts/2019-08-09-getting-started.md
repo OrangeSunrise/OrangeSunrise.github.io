@@ -7,7 +7,6 @@ author: cotes
 date: 2019-08-09 20:55:00 +0800
 categories: [博客, 教程]
 tags: [getting started]
-pin: true
 ---
 
 > 官方文章翻译版，版本：chirpy-7.4.1

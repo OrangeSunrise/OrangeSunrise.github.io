@@ -6,6 +6,7 @@ author: cerberus
 categories: [博客, 教程]
 tags: [jekyll, chirpy]
 description: 使用 Chirpy 主题从零搭建并部署个人博客，包含环境准备、依赖安装、核心配置文件说明及发布流程。
+pin: true
 ---
 
 本文记录了使用 **Jekyll + Chirpy** 主题搭建并部署个人博客的完整过程，涵盖本地开发环境配置、核心配置文件修改以及博客发布流程，适合作为一份可复用的实践指南。
@@ -30,7 +31,7 @@ _博客首页效果预览_
 | 容器         | Docker              |
 | Python       | 3.10                |
 
-> 本文涉及到的软件安装包均已打包至百度网盘，下载链接（设置链接）。
+> 本文涉及到的软件安装包均已打包至百度网盘，[下载链接](https://pan.baidu.com/s/1SDgtnMOO6aI4vtU4yoNrDg?pwd=q4p3 "点击跳转")。
 {: .prompt-tip }
 
 ## 环境准备
@@ -120,10 +121,10 @@ npm -v
 
 ## wsl2中的git配置
 
-> 教程链接：**（待补充）**
-
 在开始之前，请确保你已经在 **WSL2 / Linux 环境** 中完成了 Git 的基础配置（用户名、邮箱、SSH 或 HTTPS 登录方式等）。 
 这一步只需要做一次，后续所有博客操作都会用到 Git。
+
+安装教程：[链接](https://orangesunrise.github.io/posts/git-basic-configuration-in-wsl2/ "点击跳转")
 
 ## 项目拉取
 
@@ -688,7 +689,7 @@ _替换后的 favicon 文件列表_
 Chirpy 主题官方仓库已提供多语言支持文件，你可以直接从以下渠道获取：
 
 * **Chirpy 官方仓库**：下载对应语言的 `yml` 文件
-* **百度网盘**：如百度网盘（适合网络访问受限场景）
+* **百度网盘**：[下载链接](https://pan.baidu.com/s/1SDgtnMOO6aI4vtU4yoNrDg?pwd=q4p3 "点击跳转")
 
 下载完成后，将所需语言文件放入 `_data/locales/` 目录，并在 `_config.yml` 中指定默认语言，即可生效。
 

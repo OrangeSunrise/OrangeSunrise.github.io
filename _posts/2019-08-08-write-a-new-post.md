@@ -5,6 +5,7 @@ date: 2019-08-08 14:10:00 +0800
 categories: [博客, 教程]
 tags: [写作]
 render_with_liquid: false
+description: 本教程将指导你如何在Chirpy模板中编写一篇文章。即使你之前使用过Jekyll，也非常值得阅读，因为Chirpy的许多功能都依赖于特定变量的正确设置。
 ---
 
 > 官方文章翻译版，版本：chirpy-7.4.1

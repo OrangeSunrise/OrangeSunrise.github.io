@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Install Docker in WSL2
+title: 安装 Docker (in WSL2)
 date: 2025-12-20 20:23 +0800
 author: cerberus
 categories: [软件安装, 教程]
-tags: [docker]
+tags: [wsl2, docker]
+description: 本文基于WSL2 + Ubuntu 22.04环境，使用Docker官方apt仓库安装Docker Engine，并针对WSL2中常见的Docker Hub访问失败问题给出稳定解决方案。
 ---
 
 本文基于 **WSL2 + Ubuntu 22.04** 环境，使用 **Docker 官方 apt 仓库** 安装 Docker Engine，并针对 **WSL2 中常见的 Docker Hub 访问失败问题** 给出稳定解决方案。
@@ -255,7 +256,116 @@ docker run hello-world
 
 ------
 
-## 九、总结
+## 九、安装windows桌面版docker
+
+在 Windows 上使用 Docker，**Docker Desktop 是官方推荐方案**。它与 **WSL2 深度集成**，性能和使用体验都远好于早期的 Hyper-V 方案，非常适合本地开发、学习和测试环境。
+
+### 安装前准备（务必检查）
+
+在开始之前，请确保你的系统满足以下条件：
+
+- Windows 10 19045+ / Windows 11（64 位）
+- 已启用 **WSL2**
+- 已安装并初始化至少一个 Linux 发行版（推荐 Ubuntu 22.04）
+
+#### 1️⃣ 确认 WSL2 状态
+
+在 **PowerShell（管理员）** 中执行：
+
+```powershell
+wsl -l -v
+```
+
+示例输出：
+
+```text
+NAME            STATE   VERSION
+Ubuntu-22.04    Running 2
+```
+
+如果 VERSION 不是 2：
+
+```powershell
+wsl --set-version Ubuntu-22.04 2
+```
+
+------
+
+### 下载 Docker Desktop
+
+前往 Docker 官方下载页面：
+
+👉 https://www.docker.com/products/docker-desktop/
+
+选择：
+
+> **Docker Desktop for Windows (x86_64)**
+
+下载完成后，得到安装文件：
+
+```text
+Docker Desktop Installer.exe
+```
+
+> [百度网盘下载链接](https://pan.baidu.com/s/1ueq8ZrJR9ejKqyvQ6j1bvw?pwd=6d54 "点击跳转")
+{: .prompt-tip }
+
+------
+
+### 安装 Docker Desktop
+
+双击安装程序，安装过程中请注意以下选项：
+
+#### 1️⃣ 使用 WSL2 后端（推荐）
+
+安装向导中，**务必勾选**：
+
+- ✅ *Use WSL 2 instead of Hyper-V*
+
+这是性能和稳定性的关键。
+
+#### 2️⃣ 等待安装完成
+
+安装完成后，点击 **Finish**，Docker Desktop 会自动启动。
+
+首次启动时间可能稍长，请耐心等待。
+
+------
+
+### Docker Desktop 基本配置（重要）
+
+#### 1️⃣ 启用 WSL2 集成
+
+打开 Docker Desktop → **Settings** → **Resources** → **WSL Integration**
+
+- 开启：`Enable integration with my default WSL distro`
+- 同时勾选你正在使用的发行版（如 `Ubuntu-22.04`）
+
+点击 **Apply & Restart**
+
+------
+
+#### 2️⃣ 验证 Docker 是否可用
+
+打开 **WSL Ubuntu 终端**，执行：
+
+```bash
+docker version
+```
+
+如果能看到 Client / Server 信息，说明 Docker 已可正常使用。
+
+测试运行一个容器：
+
+```bash
+docker run hello-world
+```
+
+看到 `Hello from Docker!` 即表示安装成功 🎉
+
+------
+
+## 十、总结
 
 至此，你已经完成：
 

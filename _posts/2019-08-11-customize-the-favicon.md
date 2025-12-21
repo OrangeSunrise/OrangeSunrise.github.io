@@ -1,9 +1,10 @@
 ---
-title: 个性化Favicon
+title: 个性化网站图标
 author: cotes
 date: 2019-08-11 00:34:00 +0800
 categories: [博客, 教程]
 tags: [favicon]
+description: Chirpy主题的favicon文件存放在目录assets/img/favicons/中。你可以将它们替换为你自己的网站图标。下面的内容将一步步指导你如何创建并替换默认的favicon。
 ---
 
 > 官方文章翻译版，版本：chirpy-7.4.1
