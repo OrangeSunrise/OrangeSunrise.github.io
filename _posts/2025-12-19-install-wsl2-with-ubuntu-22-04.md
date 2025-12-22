@@ -15,17 +15,20 @@ description: 本文记录在Windows 11环境下，通过离线方式安装WSL2 +
 ## 本文涉及的软件
 
 > [**下载链接**](https://pan.baidu.com/s/1TD2TmJcL_bkfH4FrjnydKw?pwd=528z "按住Ctrl点击跳转百度网盘")
+{: .prompt-tip }
 
 - **WSL 离线安装包**：`wsl-windows-x64.msi`
 - **Ubuntu 22.04 发行版**：`.appx`
 
-> 👉 建议将所有安装包统一放在 `Downloads` 目录，便于后续操作。
+> 建议将所有安装包统一放在 `Downloads` 目录，便于后续操作。
+{: .prompt-tip }
 
 ------
 
 ## 开启 CPU 虚拟化
 
 > 若该选项未开启，WSL2 将无法使用。
+{: .prompt-danger }
 
 <img src="https://cloud-080910t-1316343199.cos.ap-beijing.myqcloud.com/assets/Pasted%20image%2020250403104942.png" alt="Pasted image 20250403104942" style="zoom: 50%;" />
 
@@ -124,7 +127,8 @@ ubuntu2204
 
 ### 配置 sudo 免密（可选）
 
-> ⚠️ 仅建议在 **个人开发环境** 中使用。
+> 仅建议在 **个人开发环境** 中使用。
+{: .prompt-warning }
 
 ```bash
 sudo -E visudo
