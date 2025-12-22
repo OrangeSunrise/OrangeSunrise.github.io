@@ -171,11 +171,9 @@ _图片说明文字_
 
 为了避免图片加载时导致页面布局抖动，建议为每张图片设置宽高：
 
-```markdown
+```text
 ![Desktop View](/assets/img/sample/mockup.png){: width="700" height="400" }
 ```
-
-{: .nolineno}
 
 > 对于 SVG 图片，至少需要指定 `width`，否则无法正常渲染。
 {: .prompt-info }
